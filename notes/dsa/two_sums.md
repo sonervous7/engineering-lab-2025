@@ -139,7 +139,7 @@ def two_sum_expected(nums, target) -> list:
             s.add(nums[i])
     return output
 ```
-
+---
 ### Thoughts
 I learned that `set()` is implemented in Python as hash table.
 Becasue of that:
