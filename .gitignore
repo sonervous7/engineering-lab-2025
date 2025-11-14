@@ -1,0 +1,119 @@
+# -----------------------
+# PYTHON
+# -----------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env*/
+.venv/
+
+# Pip logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyTest / Coverage
+.cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+.coverage*
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_convert
+*.ipynb~
+
+# Pycharm
+.idea/
+*.iml
+*.iws
+out/
+
+# Local data
+*.sqlite3
+*.db
+*.log
+logs/
+
+# -----------------------
+# C++ / CLION / CMAKE
+# -----------------------
+
+# CLion project files
+.idea/
+cmake-build-*/
+cmake-build-debug*/
+cmake-build-release*/
+cmake-build-relwithdebinfo*/
+cmake-build-minsizerel*/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# Build artifacts
+build/
+bin/
+obj/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+
+# Compilation database
+compile_commands.json
+
+# Debug directories
+debug/
+Debug/
+Release/
+x64/
+x86/
+
+# -----------------------
+# OS SPECIFIC
+# -----------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -----------------------
+# MISC
+# -----------------------
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Python/RAG cache
+**/vector_db/
+**/faiss_index/
+**/__cache__/
