@@ -24,7 +24,7 @@ or optimal answer in logarithmic time $O(\log N)$.
 **What the problem is really about:**  
 - The problem is about finding target using two approaches - iterative and recursive
 - Learning about one of the most popular searching algorithm
-- Understaning the power of $O(\log N)$
+- Understanding the power of $O(\log N)$
 
 **My first thoughts before coding:**
 - Iterative approach is much simpler to do in my opinion.
