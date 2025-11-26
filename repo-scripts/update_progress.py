@@ -7,7 +7,7 @@ DSA_TOTAL_TARGET = 100
 
 count = 0
 
-ROOT = Path('../dsa')
+ROOT = Path('dsa')
 
 # DSA counter
 subfolders = [p for p in ROOT.iterdir() if p.is_dir()]
