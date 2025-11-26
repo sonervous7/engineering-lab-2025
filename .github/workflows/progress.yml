@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run progress update
-        run: python ../scripts/update_progress.py
+        run: python repo-scripts/update_progress.py
 
       - name: Commit changes
         run: |
