@@ -20,13 +20,13 @@ for subfolder in subfolders:
 
 new_badge = f"### 100 (50 x 2) algorithm challenges ![](https://geps.dev/progress/{count})"
 
-with open('../README.md', 'r', encoding='utf-8') as f:
+with open('README.md', 'r', encoding='utf-8') as f:
     content = f.read()
 
 content = re.sub(r"### 100 \(50 x 2\) algorithm challenges !\[\]\(https://geps.dev/progress/\d+\)",
                  new_badge, content)
 
-with open('../README.md', 'w', encoding='utf-8') as f:
+with open('README.md', 'w', encoding='utf-8') as f:
     f.write(content)
 
 print(f"Progress updated: {count}/{DSA_TOTAL_TARGET}")
