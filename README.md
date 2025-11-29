@@ -51,7 +51,7 @@ This is a **training ground** — a place to learn, break things, fix things, un
 
 Over time, this repository will grow into:
 
-### 100 (50 x 2) algorithm challenges ![](https://geps.dev/progress/7)
+### 100 (50 x 2) algorithm challenges ![](https://geps.dev/progress/8)
 (in Python & C++)
 
 ### PyTorch fundamentals  ![](https://geps.dev/progress/0)
