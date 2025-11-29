@@ -149,5 +149,41 @@ we have a stack of calls, so the space complexity is  $O(N+M)$.
 
 ## Iterative merge approach
 
+### ✔ Idea
+The idea is the same as in recursive but this time with Whlie loop instead of recursion.
+For this approach we need to define additional auxiliary node for the start. At each iteration we check values of each head, and then we assign the appropriate value to `current.next_pointer`.
+We need to update head for next iterration and also we need to update current node.
+At the end, if one linked-list was shorter, we simply connect each endes.
+### ✔ Complexity
+- **Time:** $O(N + M)$ 
+- **Space:** $O(1)$
+
+### ✔ My Implementation
+
+```python
+def merge_two_sorted_iterative(head1, head2):
+
+
+    initial = ListNode(-1)
+    current = initial
+
+    while head1 is not None and head2 is not None:
+
+        if head1.val <= head2.val:
+            current.next_pointer = head1
+            head1 = head1.next_pointer
+        else:
+            current.next_pointer = head2
+            head2 = head2.next_pointer
+        current = current.next_pointer
+
+    if head1 is None:
+        current.next_pointer = head2
+    else:
+        current.next_pointer = head1
+
+    return initial.next_pointer
+```
 ---
 ### Thoughts
+An interesting problem introducing the Linked-list structure. Seemingly simple at first glance, but reducing memory complexity by replacing connections is not as easy as I thought, especially in the recursive version.

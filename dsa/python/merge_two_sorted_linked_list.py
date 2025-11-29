@@ -50,6 +50,8 @@ def merge_two_sorted_naive(head1, head2):
 
     return create_linked_list(arr)
 
+# RECURSIVE APPROACH - TIME COMPLEXITY O(n+m), SPACE COMPLEXITY DUE TO STACK CALL - O(n+m)
+
 def merge_two_sorted_recursive(head1, head2):
 
     if head1 is None:
@@ -64,6 +66,30 @@ def merge_two_sorted_recursive(head1, head2):
         head2.next_pointer = merge_two_sorted_recursive(head1, head2.next_pointer)
         return head2
 
+# ITERATIVE APPROACH (EXPECTED) - TIME COMPLEXITY - O(n+m), SPACE COMPLEXITY - O(1)
+
+def merge_two_sorted_iterative(head1, head2):
+
+
+    initial = ListNode(-1)
+    current = initial
+
+    while head1 is not None and head2 is not None:
+
+        if head1.val <= head2.val:
+            current.next_pointer = head1
+            head1 = head1.next_pointer
+        else:
+            current.next_pointer = head2
+            head2 = head2.next_pointer
+        current = current.next_pointer
+
+    if head1 is None:
+        current.next_pointer = head2
+    else:
+        current.next_pointer = head1
+
+    return initial.next_pointer
 
 examples_dict = {
     1: {
@@ -122,4 +148,4 @@ def run_algorithm(fun):
 
 
 if __name__ == '__main__':
-    run_algorithm(merge_two_sorted_recursive)
+    run_algorithm(merge_two_sorted_iterative)
